@@ -11,13 +11,12 @@ function calculate(){
     if (isNaN(weight) || isNaN(height) || isNaN(age) || !gender){
         alert("Silahkan masukkan data Anda dengan benar.");
         return;
-    }
+    } //untuk memastikan data yang diminta diisi semua
 
     //menghitung BMI
     const bmi = weight / (height * height);
     const resultBMI = document.getElementById("result-bmi");
     const infoHasil = document.getElementById("info");
-    const penyakit = document.getElementById("penyakit-info");
 
     //menampilkan hasil bmi
     resultBMI.textContent = bmi.toFixed(2) //untuk membatasi 2 desimal
@@ -36,8 +35,6 @@ function getBMICategory(bmi){
     }else if (bmi >= 30){
         return "Kegemukan(Obesitas)";
     }
-
-    
 }
 
 // fungsi untuk mereset form
