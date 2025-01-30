@@ -1,6 +1,311 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background-color: burlywood;
+/* tampilan website */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #D5E5E5;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
+
+/* judul */
+.main-header{
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size:2rem;
+    color:black;
+}
+
+                                        /* form BMI kalkulator  */
+main{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: papayawhip;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* deskripsi BMI kalkulator */
+.article{
+    max-width: 600px;
+    width:90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #17395C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:azure;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+ 
+/* keunggulan kalkulator bmi */
+article{
+    max-width: 350px;
+    width:80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* form pengisian BMI kalkulator */
+form{
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #17395C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* input data BMI */
+.forms{
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* judul hasil */
+.section h2{
+    font-size:2rem;
+    text-align: center;
+    color:black;
+}
+
+/* hasil */
+.section p{
+    padding:0%;
+    font-size:1rem;
+    color:azure;
+}
+
+/* tombol bantuan */
+.section .hasil {
+    color:azure;
+    font-size: 4rem;
+}
+
+/* pesan peringatan */
+.peringatan{
+    font-size:1rem;
+    text-align: center;
+    color:black;
+    margin: 5%;
+}
+
+/* contoh contoh risiko penyakit */
+.penyakit{
+    max-width: 350px;
+    width:100%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+footer{
+    font-size:1rem;
+    text-align: center;
+    margin-top: 20px;
+    color:black;
+}
+
+/* media query untuk tampilan tablet */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    /* judul bmi kalkulator */
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* deskripsi bmi kalkulator */
+    .article {
+        padding: 15px;
+        font-size: 0.9rem; 
+        line-height: 1.5;
+        text-align: left; /* teks rata kiri */
+    }
+
+        /* form pengisian BMI kalkulator */
+    form{
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* input data bmi */
+    .forms {
+        max-width: 100%;
+    }
+
+    /* judul hasil */
+    .section h2 {
+        font-size: 1.4rem;
+    }
+
+        /* tampilan peringatan */
+    .peringatan {
+        font-size: 1rem;
+    }
+
+    /* tombol bantuan */
+    .container {
+        font-size: 1.2rem;
+    }
+}
+
+/* tampilan hp */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    /* judul bmi kalkulator */
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    /* deskripsi bmi kalkulator */
+    .article{
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    /* form pengisian data */
+    .forms {
+        padding:10px;
+        font-size: 0.9rem;
+    }
+    /* judul hasil */
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+        /* hasil */
+    .peringatan {
+        font-size: 0.9rem;
+    }
+
+    /* tombol bantuan */
+    .container {
+        font-size: 1rem;
+    }
+}
+
+/* tampilan laptop */
+    @media (min-width: 1024px) {
+        body {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+    
+        main {
+            max-width: 800px;
+            padding: 30px;
+        }
+
+        /* judul bmi kalkulator */
+        h1 {
+            font-size: 3rem;
+        }
+    
+        /* deskripsi bmi kalkulator */
+        .article{ 
+            padding: 10px;
+            font-size: 1rem;
+            text-align: left;
+        }
+        /* form pengisian data */
+        .forms {
+            padding:8px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    
+        /* judul hasil */
+        .section h2 {
+            font-size: 2rem;
+        }
+        /* pesan untuk user */
+        .peringatan {
+            font-size: 1rem;
+        }
+    
+        /* hasil */
+        .section p{
+            font-size:1rem;
+            color:azure;
+        }
+
+        /*  tombol bantuan */
+        .section .hasil {
+            color:azure;
+            font-size: 5rem;
+        }
+
+        /* risiko penyakit */
+        .penyakit{
+            max-width: 350px;
+            border-radius: 10px;
+            font-size: 1rem; 
+        }
+        /* kegunaan bmi kalkulator */
+        article{
+            text-align: left;
+            font-size: 1rem;
+        }
+        /* copyweite */
+        footer{
+            font-size: 1rem;
+        }
+    }
+
